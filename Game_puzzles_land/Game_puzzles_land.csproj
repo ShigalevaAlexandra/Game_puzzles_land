@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5148F1EF-F365-45BE-86EF-2EAB02DF1277}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game_puzzles_land</RootNamespace>
+    <AssemblyName>Game_puzzles_land</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Angle_instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Angle_instruction.Designer.cs">
+      <DependentUpon>Angle_instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice_crosswords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice_crosswords.Designer.cs">
+      <DependentUpon>Choice_crosswords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice_fillwords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice_fillwords.Designer.cs">
+      <DependentUpon>Choice_fillwords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice_puzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice_puzzle.Designer.cs">
+      <DependentUpon>Choice_puzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classic_instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classic_instruction.Designer.cs">
+      <DependentUpon>Classic_instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crosswords_classic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crosswords_classic.Designer.cs">
+      <DependentUpon>Crosswords_classic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crossword_numberbus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crossword_numberbus.Designer.cs">
+      <DependentUpon>Crossword_numberbus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fillwords_angle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fillwords_angle.Designer.cs">
+      <DependentUpon>Fillwords_angle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fillwords_nine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fillwords_nine.Designer.cs">
+      <DependentUpon>Fillwords_nine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_menu.Designer.cs">
+      <DependentUpon>Main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_controrls\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My_controrls\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_controrls\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My_controrls\StrokeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Nine_instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nine_instruction.Designer.cs">
+      <DependentUpon>Nine_instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numberbus_instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numberbus_instruction.Designer.cs">
+      <DependentUpon>Numberbus_instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Angle_instruction.resx">
+      <DependentUpon>Angle_instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice_crosswords.resx">
+      <DependentUpon>Choice_crosswords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice_fillwords.resx">
+      <DependentUpon>Choice_fillwords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice_puzzle.resx">
+      <DependentUpon>Choice_puzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classic_instruction.resx">
+      <DependentUpon>Classic_instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crosswords_classic.resx">
+      <DependentUpon>Crosswords_classic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crossword_numberbus.resx">
+      <DependentUpon>Crossword_numberbus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fillwords_angle.resx">
+      <DependentUpon>Fillwords_angle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fillwords_nine.resx">
+      <DependentUpon>Fillwords_nine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_menu.resx">
+      <DependentUpon>Main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_controrls\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nine_instruction.resx">
+      <DependentUpon>Nine_instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numberbus_instruction.resx">
+      <DependentUpon>Numberbus_instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\bcgr_choice.png" />
+    <None Include="Resources\bcgr_fillwords_angle.png" />
+    <None Include="Resources\bcgr_instruction_angle.png" />
+    <None Include="Resources\bcgr_fillwords_nine.png" />
+    <None Include="Resources\bcgr_instruction_nine.png" />
+    <None Include="Resources\bcgr_crosswords_classic.png" />
+    <None Include="Resources\bcgr_instruction_classic.png" />
+    <None Include="Resources\bcgr_crossword_numberbus.png" />
+    <None Include="Resources\bcgr_instruction_numberbus.png" />
+    <Content Include="Resources\bcgr_main_menu.png" />
+    <None Include="Resources\primer_area_angle.png" />
+    <None Include="Resources\primer_area_nine.png" />
+    <None Include="Resources\primer_area_classic.png" />
+    <None Include="Resources\primer_area_numberbus.png" />
+    <Content Include="Resources\title_game.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
