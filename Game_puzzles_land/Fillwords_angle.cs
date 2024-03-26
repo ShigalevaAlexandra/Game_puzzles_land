@@ -26,7 +26,7 @@ namespace Game_puzzles_land
         private void Add_my_font()
         {
             this.my_font = new PrivateFontCollection();
-            this.my_font.AddFontFile("fonts/seymour-one.ttf");
+            this.my_font.AddFontFile("../../seymour-one.ttf");
         }
 
         //функция применения шрифтов
