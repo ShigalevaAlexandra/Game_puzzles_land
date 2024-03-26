@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.pctBox_crossword_area = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.qw_1 = new System.Windows.Forms.TextBox();
+            this.qw_6 = new System.Windows.Forms.TextBox();
+            this.qw_9 = new System.Windows.Forms.TextBox();
+            this.qw_5 = new System.Windows.Forms.TextBox();
+            this.qw_10 = new System.Windows.Forms.TextBox();
+            this.qw_2 = new System.Windows.Forms.TextBox();
+            this.qw_3 = new System.Windows.Forms.TextBox();
+            this.qw_7 = new System.Windows.Forms.TextBox();
+            this.qw_11 = new System.Windows.Forms.TextBox();
+            this.qw_4 = new System.Windows.Forms.TextBox();
+            this.qw_8 = new System.Windows.Forms.TextBox();
+            this.Area_qw_1 = new Game_puzzles_land.My_controrls.CustomTextBox();
             this.custTxtBox_83_113 = new Game_puzzles_land.My_controrls.CustomTextBox();
             this.custTxtBox_82 = new Game_puzzles_land.My_controrls.CustomTextBox();
             this.custTxtBox_81 = new Game_puzzles_land.My_controrls.CustomTextBox();
@@ -101,148 +102,173 @@
             this.pctBox_crossword_area.TabIndex = 24;
             this.pctBox_crossword_area.TabStop = false;
             // 
-            // textBox1
+            // qw_1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox1.Location = new System.Drawing.Point(339, 272);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(16, 22);
-            this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "1";
+            this.qw_1.BackColor = System.Drawing.Color.White;
+            this.qw_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.qw_1.Location = new System.Drawing.Point(339, 272);
+            this.qw_1.Name = "qw_1";
+            this.qw_1.ReadOnly = true;
+            this.qw_1.Size = new System.Drawing.Size(16, 22);
+            this.qw_1.TabIndex = 26;
+            this.qw_1.Text = "1";
             // 
-            // textBox2
+            // qw_6
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox2.Location = new System.Drawing.Point(339, 403);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(16, 22);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.Text = "6";
+            this.qw_6.BackColor = System.Drawing.Color.White;
+            this.qw_6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_6.Location = new System.Drawing.Point(339, 403);
+            this.qw_6.Name = "qw_6";
+            this.qw_6.ReadOnly = true;
+            this.qw_6.Size = new System.Drawing.Size(16, 22);
+            this.qw_6.TabIndex = 32;
+            this.qw_6.Text = "6";
             // 
-            // textBox3
+            // qw_9
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox3.Location = new System.Drawing.Point(339, 535);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(16, 22);
-            this.textBox3.TabIndex = 34;
-            this.textBox3.Text = "9";
+            this.qw_9.BackColor = System.Drawing.Color.White;
+            this.qw_9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_9.Location = new System.Drawing.Point(339, 535);
+            this.qw_9.Name = "qw_9";
+            this.qw_9.ReadOnly = true;
+            this.qw_9.Size = new System.Drawing.Size(16, 22);
+            this.qw_9.TabIndex = 34;
+            this.qw_9.Text = "9";
             // 
-            // textBox4
+            // qw_5
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox4.Location = new System.Drawing.Point(471, 337);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(16, 22);
-            this.textBox4.TabIndex = 38;
-            this.textBox4.Text = "5";
+            this.qw_5.BackColor = System.Drawing.Color.White;
+            this.qw_5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_5.Location = new System.Drawing.Point(471, 337);
+            this.qw_5.Name = "qw_5";
+            this.qw_5.ReadOnly = true;
+            this.qw_5.Size = new System.Drawing.Size(16, 22);
+            this.qw_5.TabIndex = 38;
+            this.qw_5.Text = "5";
             // 
-            // textBox5
+            // qw_10
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox5.Location = new System.Drawing.Point(471, 600);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(26, 22);
-            this.textBox5.TabIndex = 42;
-            this.textBox5.Text = "10";
+            this.qw_10.BackColor = System.Drawing.Color.White;
+            this.qw_10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_10.Location = new System.Drawing.Point(471, 600);
+            this.qw_10.Name = "qw_10";
+            this.qw_10.ReadOnly = true;
+            this.qw_10.Size = new System.Drawing.Size(26, 22);
+            this.qw_10.TabIndex = 42;
+            this.qw_10.Text = "10";
             // 
-            // textBox6
+            // qw_2
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox6.Location = new System.Drawing.Point(538, 272);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(16, 22);
-            this.textBox6.TabIndex = 44;
-            this.textBox6.Text = "2";
+            this.qw_2.BackColor = System.Drawing.Color.White;
+            this.qw_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_2.Location = new System.Drawing.Point(538, 272);
+            this.qw_2.Name = "qw_2";
+            this.qw_2.ReadOnly = true;
+            this.qw_2.Size = new System.Drawing.Size(16, 22);
+            this.qw_2.TabIndex = 44;
+            this.qw_2.Text = "2";
             // 
-            // textBox7
+            // qw_3
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox7.Location = new System.Drawing.Point(604, 272);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(16, 22);
-            this.textBox7.TabIndex = 52;
-            this.textBox7.Text = "3";
+            this.qw_3.BackColor = System.Drawing.Color.White;
+            this.qw_3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_3.Location = new System.Drawing.Point(604, 272);
+            this.qw_3.Name = "qw_3";
+            this.qw_3.ReadOnly = true;
+            this.qw_3.Size = new System.Drawing.Size(16, 22);
+            this.qw_3.TabIndex = 52;
+            this.qw_3.Text = "3";
             // 
-            // textBox8
+            // qw_7
             // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox8.Location = new System.Drawing.Point(737, 404);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(16, 22);
-            this.textBox8.TabIndex = 57;
-            this.textBox8.Text = "7";
+            this.qw_7.BackColor = System.Drawing.Color.White;
+            this.qw_7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_7.Location = new System.Drawing.Point(737, 404);
+            this.qw_7.Name = "qw_7";
+            this.qw_7.ReadOnly = true;
+            this.qw_7.Size = new System.Drawing.Size(16, 22);
+            this.qw_7.TabIndex = 57;
+            this.qw_7.Text = "7";
             // 
-            // textBox9
+            // qw_11
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox9.Location = new System.Drawing.Point(737, 600);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(22, 22);
-            this.textBox9.TabIndex = 58;
-            this.textBox9.Text = "11";
+            this.qw_11.BackColor = System.Drawing.Color.White;
+            this.qw_11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_11.Location = new System.Drawing.Point(737, 600);
+            this.qw_11.Name = "qw_11";
+            this.qw_11.ReadOnly = true;
+            this.qw_11.Size = new System.Drawing.Size(22, 22);
+            this.qw_11.TabIndex = 58;
+            this.qw_11.Text = "11";
             // 
-            // textBox10
+            // qw_4
             // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox10.Location = new System.Drawing.Point(803, 272);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(16, 22);
-            this.textBox10.TabIndex = 65;
-            this.textBox10.Text = "4";
+            this.qw_4.BackColor = System.Drawing.Color.White;
+            this.qw_4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_4.Location = new System.Drawing.Point(803, 272);
+            this.qw_4.Name = "qw_4";
+            this.qw_4.ReadOnly = true;
+            this.qw_4.Size = new System.Drawing.Size(16, 22);
+            this.qw_4.TabIndex = 65;
+            this.qw_4.Text = "4";
             // 
-            // textBox11
+            // qw_8
             // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
-            this.textBox11.Location = new System.Drawing.Point(936, 404);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(16, 22);
-            this.textBox11.TabIndex = 74;
-            this.textBox11.Text = "8";
+            this.qw_8.BackColor = System.Drawing.Color.White;
+            this.qw_8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qw_8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qw_8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(98)))));
+            this.qw_8.Location = new System.Drawing.Point(936, 404);
+            this.qw_8.Name = "qw_8";
+            this.qw_8.ReadOnly = true;
+            this.qw_8.Size = new System.Drawing.Size(16, 22);
+            this.qw_8.TabIndex = 74;
+            this.qw_8.Text = "8";
+            // 
+            // Area_qw_1
+            // 
+            this.Area_qw_1.BackColor = System.Drawing.SystemColors.Window;
+            this.Area_qw_1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(9)))), ((int)(((byte)(98)))));
+            this.Area_qw_1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(9)))), ((int)(((byte)(98)))));
+            this.Area_qw_1.BorderRadius = 15;
+            this.Area_qw_1.BorderSize = 2;
+            this.Area_qw_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Area_qw_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(9)))), ((int)(((byte)(98)))));
+            this.Area_qw_1.Location = new System.Drawing.Point(132, 175);
+            this.Area_qw_1.Margin = new System.Windows.Forms.Padding(4);
+            this.Area_qw_1.Multiline = true;
+            this.Area_qw_1.Name = "Area_qw_1";
+            this.Area_qw_1.Padding = new System.Windows.Forms.Padding(7, 20, 7, 20);
+            this.Area_qw_1.PasswordChar = false;
+            this.Area_qw_1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.Area_qw_1.PlaceholderText = "";
+            this.Area_qw_1.ReadOnly = true;
+            this.Area_qw_1.Size = new System.Drawing.Size(200, 97);
+            this.Area_qw_1.TabIndex = 77;
+            this.Area_qw_1.Texts = "Какой крейсер \"приковала\" Нева";
+            this.Area_qw_1.UnderlinedStyle = false;
+            this.Area_qw_1.Visible = false;
             // 
             // custTxtBox_83_113
             // 
@@ -261,7 +287,7 @@
             this.custTxtBox_83_113.PasswordChar = false;
             this.custTxtBox_83_113.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_83_113.PlaceholderText = "";
-            this.custTxtBox_83_113.ReadOnly = true;
+            this.custTxtBox_83_113.ReadOnly = false;
             this.custTxtBox_83_113.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_83_113.TabIndex = 73;
             this.custTxtBox_83_113.Texts = "";
@@ -284,7 +310,7 @@
             this.custTxtBox_82.PasswordChar = false;
             this.custTxtBox_82.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_82.PlaceholderText = "";
-            this.custTxtBox_82.ReadOnly = true;
+            this.custTxtBox_82.ReadOnly = false;
             this.custTxtBox_82.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_82.TabIndex = 72;
             this.custTxtBox_82.Texts = "";
@@ -307,7 +333,7 @@
             this.custTxtBox_81.PasswordChar = false;
             this.custTxtBox_81.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_81.PlaceholderText = "";
-            this.custTxtBox_81.ReadOnly = true;
+            this.custTxtBox_81.ReadOnly = false;
             this.custTxtBox_81.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_81.TabIndex = 71;
             this.custTxtBox_81.Texts = "";
@@ -330,7 +356,7 @@
             this.custTxtBox_73_80.PasswordChar = false;
             this.custTxtBox_73_80.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_73_80.PlaceholderText = "";
-            this.custTxtBox_73_80.ReadOnly = true;
+            this.custTxtBox_73_80.ReadOnly = false;
             this.custTxtBox_73_80.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_73_80.TabIndex = 70;
             this.custTxtBox_73_80.Texts = "";
@@ -353,7 +379,7 @@
             this.custTxtBox_26.PasswordChar = false;
             this.custTxtBox_26.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_26.PlaceholderText = "";
-            this.custTxtBox_26.ReadOnly = true;
+            this.custTxtBox_26.ReadOnly = false;
             this.custTxtBox_26.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_26.TabIndex = 69;
             this.custTxtBox_26.Texts = "";
@@ -376,7 +402,7 @@
             this.custTxtBox_112.PasswordChar = false;
             this.custTxtBox_112.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_112.PlaceholderText = "";
-            this.custTxtBox_112.ReadOnly = true;
+            this.custTxtBox_112.ReadOnly = false;
             this.custTxtBox_112.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_112.TabIndex = 68;
             this.custTxtBox_112.Texts = "";
@@ -399,7 +425,7 @@
             this.custTxtBox_72.PasswordChar = false;
             this.custTxtBox_72.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_72.PlaceholderText = "";
-            this.custTxtBox_72.ReadOnly = true;
+            this.custTxtBox_72.ReadOnly = false;
             this.custTxtBox_72.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_72.TabIndex = 67;
             this.custTxtBox_72.Texts = "";
@@ -422,7 +448,7 @@
             this.custTxtBox_25.PasswordChar = false;
             this.custTxtBox_25.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_25.PlaceholderText = "";
-            this.custTxtBox_25.ReadOnly = true;
+            this.custTxtBox_25.ReadOnly = false;
             this.custTxtBox_25.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_25.TabIndex = 66;
             this.custTxtBox_25.Texts = "";
@@ -445,7 +471,7 @@
             this.custTxtBox_45_111.PasswordChar = false;
             this.custTxtBox_45_111.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_45_111.PlaceholderText = "";
-            this.custTxtBox_45_111.ReadOnly = true;
+            this.custTxtBox_45_111.ReadOnly = false;
             this.custTxtBox_45_111.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_45_111.TabIndex = 64;
             this.custTxtBox_45_111.Texts = "";
@@ -468,7 +494,7 @@
             this.custTxtBox_44.PasswordChar = false;
             this.custTxtBox_44.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_44.PlaceholderText = "";
-            this.custTxtBox_44.ReadOnly = true;
+            this.custTxtBox_44.ReadOnly = false;
             this.custTxtBox_44.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_44.TabIndex = 63;
             this.custTxtBox_44.Texts = "";
@@ -491,7 +517,7 @@
             this.custTxtBox_43.PasswordChar = false;
             this.custTxtBox_43.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_43.PlaceholderText = "";
-            this.custTxtBox_43.ReadOnly = true;
+            this.custTxtBox_43.ReadOnly = false;
             this.custTxtBox_43.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_43.TabIndex = 62;
             this.custTxtBox_43.Texts = "";
@@ -514,7 +540,7 @@
             this.custTxtBox_71_42.PasswordChar = false;
             this.custTxtBox_71_42.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_71_42.PlaceholderText = "";
-            this.custTxtBox_71_42.ReadOnly = true;
+            this.custTxtBox_71_42.ReadOnly = false;
             this.custTxtBox_71_42.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_71_42.TabIndex = 61;
             this.custTxtBox_71_42.Texts = "";
@@ -537,7 +563,7 @@
             this.custTxtBox_41.PasswordChar = false;
             this.custTxtBox_41.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_41.PlaceholderText = "";
-            this.custTxtBox_41.ReadOnly = true;
+            this.custTxtBox_41.ReadOnly = false;
             this.custTxtBox_41.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_41.TabIndex = 60;
             this.custTxtBox_41.Texts = "";
@@ -560,7 +586,7 @@
             this.custTxtBox_24_40.PasswordChar = false;
             this.custTxtBox_24_40.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_24_40.PlaceholderText = "";
-            this.custTxtBox_24_40.ReadOnly = true;
+            this.custTxtBox_24_40.ReadOnly = false;
             this.custTxtBox_24_40.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_24_40.TabIndex = 59;
             this.custTxtBox_24_40.Texts = "";
@@ -583,7 +609,7 @@
             this.custTxtBox_110.PasswordChar = false;
             this.custTxtBox_110.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_110.PlaceholderText = "";
-            this.custTxtBox_110.ReadOnly = true;
+            this.custTxtBox_110.ReadOnly = false;
             this.custTxtBox_110.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_110.TabIndex = 56;
             this.custTxtBox_110.Texts = "";
@@ -606,7 +632,7 @@
             this.custTxtBox_70.PasswordChar = false;
             this.custTxtBox_70.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_70.PlaceholderText = "";
-            this.custTxtBox_70.ReadOnly = true;
+            this.custTxtBox_70.ReadOnly = false;
             this.custTxtBox_70.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_70.TabIndex = 55;
             this.custTxtBox_70.Texts = "";
@@ -629,7 +655,7 @@
             this.custTxtBox_23.PasswordChar = false;
             this.custTxtBox_23.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_23.PlaceholderText = "";
-            this.custTxtBox_23.ReadOnly = true;
+            this.custTxtBox_23.ReadOnly = false;
             this.custTxtBox_23.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_23.TabIndex = 54;
             this.custTxtBox_23.Texts = "";
@@ -652,7 +678,7 @@
             this.custTxtBox_22.PasswordChar = false;
             this.custTxtBox_22.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_22.PlaceholderText = "";
-            this.custTxtBox_22.ReadOnly = true;
+            this.custTxtBox_22.ReadOnly = false;
             this.custTxtBox_22.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_22.TabIndex = 53;
             this.custTxtBox_22.Texts = "";
@@ -675,7 +701,7 @@
             this.custTxtBox_102.PasswordChar = false;
             this.custTxtBox_102.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_102.PlaceholderText = "";
-            this.custTxtBox_102.ReadOnly = true;
+            this.custTxtBox_102.ReadOnly = false;
             this.custTxtBox_102.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_102.TabIndex = 51;
             this.custTxtBox_102.Texts = "";
@@ -698,7 +724,7 @@
             this.custTxtBox_33.PasswordChar = false;
             this.custTxtBox_33.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_33.PlaceholderText = "";
-            this.custTxtBox_33.ReadOnly = true;
+            this.custTxtBox_33.ReadOnly = false;
             this.custTxtBox_33.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_33.TabIndex = 50;
             this.custTxtBox_33.Texts = "";
@@ -721,7 +747,7 @@
             this.custTxtBox_64_32.PasswordChar = false;
             this.custTxtBox_64_32.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_64_32.PlaceholderText = "";
-            this.custTxtBox_64_32.ReadOnly = true;
+            this.custTxtBox_64_32.ReadOnly = false;
             this.custTxtBox_64_32.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_64_32.TabIndex = 49;
             this.custTxtBox_64_32.Texts = "";
@@ -744,7 +770,7 @@
             this.custTxtBox_31.PasswordChar = false;
             this.custTxtBox_31.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_31.PlaceholderText = "";
-            this.custTxtBox_31.ReadOnly = true;
+            this.custTxtBox_31.ReadOnly = false;
             this.custTxtBox_31.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_31.TabIndex = 48;
             this.custTxtBox_31.Texts = "";
@@ -767,7 +793,7 @@
             this.custTxtBox_21_30.PasswordChar = false;
             this.custTxtBox_21_30.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_21_30.PlaceholderText = "";
-            this.custTxtBox_21_30.ReadOnly = true;
+            this.custTxtBox_21_30.ReadOnly = false;
             this.custTxtBox_21_30.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_21_30.TabIndex = 47;
             this.custTxtBox_21_30.Texts = "";
@@ -790,7 +816,7 @@
             this.custTxtBox_101.PasswordChar = false;
             this.custTxtBox_101.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_101.PlaceholderText = "";
-            this.custTxtBox_101.ReadOnly = true;
+            this.custTxtBox_101.ReadOnly = false;
             this.custTxtBox_101.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_101.TabIndex = 46;
             this.custTxtBox_101.Texts = "";
@@ -813,7 +839,7 @@
             this.custTxtBox_63.PasswordChar = false;
             this.custTxtBox_63.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_63.PlaceholderText = "";
-            this.custTxtBox_63.ReadOnly = true;
+            this.custTxtBox_63.ReadOnly = false;
             this.custTxtBox_63.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_63.TabIndex = 45;
             this.custTxtBox_63.Texts = "";
@@ -836,7 +862,7 @@
             this.custTxtBox_20.PasswordChar = false;
             this.custTxtBox_20.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_20.PlaceholderText = "";
-            this.custTxtBox_20.ReadOnly = true;
+            this.custTxtBox_20.ReadOnly = false;
             this.custTxtBox_20.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_20.TabIndex = 43;
             this.custTxtBox_20.Texts = "";
@@ -859,7 +885,7 @@
             this.custTxtBox_54_100.PasswordChar = false;
             this.custTxtBox_54_100.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_54_100.PlaceholderText = "";
-            this.custTxtBox_54_100.ReadOnly = true;
+            this.custTxtBox_54_100.ReadOnly = false;
             this.custTxtBox_54_100.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_54_100.TabIndex = 41;
             this.custTxtBox_54_100.Texts = "";
@@ -882,7 +908,7 @@
             this.custTxtBox_53_92.PasswordChar = false;
             this.custTxtBox_53_92.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_53_92.PlaceholderText = "";
-            this.custTxtBox_53_92.ReadOnly = true;
+            this.custTxtBox_53_92.ReadOnly = false;
             this.custTxtBox_53_92.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_53_92.TabIndex = 40;
             this.custTxtBox_53_92.Texts = "";
@@ -905,7 +931,7 @@
             this.custTxtBox_52.PasswordChar = false;
             this.custTxtBox_52.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_52.PlaceholderText = "";
-            this.custTxtBox_52.ReadOnly = true;
+            this.custTxtBox_52.ReadOnly = false;
             this.custTxtBox_52.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_52.TabIndex = 39;
             this.custTxtBox_52.Texts = "";
@@ -928,7 +954,7 @@
             this.custTxtBox_50.PasswordChar = false;
             this.custTxtBox_50.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_50.PlaceholderText = "";
-            this.custTxtBox_50.ReadOnly = true;
+            this.custTxtBox_50.ReadOnly = false;
             this.custTxtBox_50.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_50.TabIndex = 37;
             this.custTxtBox_50.Texts = "";
@@ -951,7 +977,7 @@
             this.custTxtBox_51_62.PasswordChar = false;
             this.custTxtBox_51_62.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_51_62.PlaceholderText = "";
-            this.custTxtBox_51_62.ReadOnly = true;
+            this.custTxtBox_51_62.ReadOnly = false;
             this.custTxtBox_51_62.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_51_62.TabIndex = 36;
             this.custTxtBox_51_62.Texts = "";
@@ -974,7 +1000,7 @@
             this.custTxtBox_91.PasswordChar = false;
             this.custTxtBox_91.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_91.PlaceholderText = "";
-            this.custTxtBox_91.ReadOnly = true;
+            this.custTxtBox_91.ReadOnly = false;
             this.custTxtBox_91.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_91.TabIndex = 35;
             this.custTxtBox_91.Texts = "";
@@ -997,7 +1023,7 @@
             this.custTxtBox_61.PasswordChar = false;
             this.custTxtBox_61.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_61.PlaceholderText = "";
-            this.custTxtBox_61.ReadOnly = true;
+            this.custTxtBox_61.ReadOnly = false;
             this.custTxtBox_61.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_61.TabIndex = 33;
             this.custTxtBox_61.Texts = "";
@@ -1020,7 +1046,7 @@
             this.custTxtBox_15.PasswordChar = false;
             this.custTxtBox_15.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_15.PlaceholderText = "";
-            this.custTxtBox_15.ReadOnly = true;
+            this.custTxtBox_15.ReadOnly = false;
             this.custTxtBox_15.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_15.TabIndex = 31;
             this.custTxtBox_15.Texts = "";
@@ -1043,7 +1069,7 @@
             this.custTxtBox_14_90.PasswordChar = false;
             this.custTxtBox_14_90.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_14_90.PlaceholderText = "";
-            this.custTxtBox_14_90.ReadOnly = true;
+            this.custTxtBox_14_90.ReadOnly = false;
             this.custTxtBox_14_90.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_14_90.TabIndex = 30;
             this.custTxtBox_14_90.Texts = "";
@@ -1066,7 +1092,7 @@
             this.custTxtBox_13.PasswordChar = false;
             this.custTxtBox_13.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_13.PlaceholderText = "";
-            this.custTxtBox_13.ReadOnly = true;
+            this.custTxtBox_13.ReadOnly = false;
             this.custTxtBox_13.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_13.TabIndex = 29;
             this.custTxtBox_13.Texts = "";
@@ -1089,7 +1115,7 @@
             this.custTxtBox_12_60.PasswordChar = false;
             this.custTxtBox_12_60.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_12_60.PlaceholderText = "";
-            this.custTxtBox_12_60.ReadOnly = true;
+            this.custTxtBox_12_60.ReadOnly = false;
             this.custTxtBox_12_60.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_12_60.TabIndex = 28;
             this.custTxtBox_12_60.Texts = "";
@@ -1112,7 +1138,7 @@
             this.custTxtBox_11.PasswordChar = false;
             this.custTxtBox_11.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_11.PlaceholderText = "";
-            this.custTxtBox_11.ReadOnly = true;
+            this.custTxtBox_11.ReadOnly = false;
             this.custTxtBox_11.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_11.TabIndex = 27;
             this.custTxtBox_11.Texts = "";
@@ -1127,6 +1153,7 @@
             this.custTxtBox_10.BorderSize = 2;
             this.custTxtBox_10.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.custTxtBox_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(9)))), ((int)(((byte)(98)))));
+            this.custTxtBox_10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.custTxtBox_10.Location = new System.Drawing.Point(333, 268);
             this.custTxtBox_10.Margin = new System.Windows.Forms.Padding(4);
             this.custTxtBox_10.Multiline = true;
@@ -1135,11 +1162,13 @@
             this.custTxtBox_10.PasswordChar = false;
             this.custTxtBox_10.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custTxtBox_10.PlaceholderText = "";
-            this.custTxtBox_10.ReadOnly = true;
+            this.custTxtBox_10.ReadOnly = false;
             this.custTxtBox_10.Size = new System.Drawing.Size(65, 65);
             this.custTxtBox_10.TabIndex = 25;
             this.custTxtBox_10.Texts = "";
             this.custTxtBox_10.UnderlinedStyle = false;
+            this.custTxtBox_10.MouseLeave += new System.EventHandler(this.custTxtBox_10_MouseLeave);
+            this.custTxtBox_10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.custTxtBox_10_MouseMove);
             // 
             // rndBtn_instruction
             // 
@@ -1179,6 +1208,7 @@
             this.rndBtn_help.Text = "подсказка";
             this.rndBtn_help.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(69)))), ((int)(((byte)(127)))));
             this.rndBtn_help.UseVisualStyleBackColor = false;
+            this.rndBtn_help.Click += new System.EventHandler(this.rndBtn_help_Click);
             // 
             // strLbl_value_record
             // 
@@ -1194,7 +1224,7 @@
             this.strLbl_value_record.OutlineWidth = 3F;
             this.strLbl_value_record.Size = new System.Drawing.Size(110, 48);
             this.strLbl_value_record.TabIndex = 21;
-            this.strLbl_value_record.Text = "100%";
+            this.strLbl_value_record.Text = "0%";
             // 
             // strLbl_record
             // 
@@ -1226,7 +1256,7 @@
             this.strLbl_value_progress.OutlineWidth = 3F;
             this.strLbl_value_progress.Size = new System.Drawing.Size(110, 48);
             this.strLbl_value_progress.TabIndex = 19;
-            this.strLbl_value_progress.Text = "100%";
+            this.strLbl_value_progress.Text = "0%";
             // 
             // strLbl_progress
             // 
@@ -1287,7 +1317,8 @@
             this.BackgroundImage = global::Game_puzzles_land.Properties.Resources.bcgr_crosswords_classic;
             this.ClientSize = new System.Drawing.Size(1325, 882);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.Area_qw_1);
+            this.Controls.Add(this.qw_8);
             this.Controls.Add(this.custTxtBox_83_113);
             this.Controls.Add(this.custTxtBox_82);
             this.Controls.Add(this.custTxtBox_81);
@@ -1296,20 +1327,20 @@
             this.Controls.Add(this.custTxtBox_112);
             this.Controls.Add(this.custTxtBox_72);
             this.Controls.Add(this.custTxtBox_25);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.qw_4);
             this.Controls.Add(this.custTxtBox_45_111);
             this.Controls.Add(this.custTxtBox_44);
             this.Controls.Add(this.custTxtBox_43);
             this.Controls.Add(this.custTxtBox_71_42);
             this.Controls.Add(this.custTxtBox_41);
             this.Controls.Add(this.custTxtBox_24_40);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.qw_11);
+            this.Controls.Add(this.qw_7);
             this.Controls.Add(this.custTxtBox_110);
             this.Controls.Add(this.custTxtBox_70);
             this.Controls.Add(this.custTxtBox_23);
             this.Controls.Add(this.custTxtBox_22);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.qw_3);
             this.Controls.Add(this.custTxtBox_102);
             this.Controls.Add(this.custTxtBox_33);
             this.Controls.Add(this.custTxtBox_64_32);
@@ -1317,25 +1348,25 @@
             this.Controls.Add(this.custTxtBox_21_30);
             this.Controls.Add(this.custTxtBox_101);
             this.Controls.Add(this.custTxtBox_63);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.qw_2);
             this.Controls.Add(this.custTxtBox_20);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.qw_10);
             this.Controls.Add(this.custTxtBox_54_100);
             this.Controls.Add(this.custTxtBox_53_92);
             this.Controls.Add(this.custTxtBox_52);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.qw_5);
             this.Controls.Add(this.custTxtBox_50);
             this.Controls.Add(this.custTxtBox_51_62);
             this.Controls.Add(this.custTxtBox_91);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.qw_9);
             this.Controls.Add(this.custTxtBox_61);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.qw_6);
             this.Controls.Add(this.custTxtBox_15);
             this.Controls.Add(this.custTxtBox_14_90);
             this.Controls.Add(this.custTxtBox_13);
             this.Controls.Add(this.custTxtBox_12_60);
             this.Controls.Add(this.custTxtBox_11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.qw_1);
             this.Controls.Add(this.custTxtBox_10);
             this.Controls.Add(this.pctBox_crossword_area);
             this.Controls.Add(this.rndBtn_instruction);
@@ -1354,6 +1385,7 @@
             this.Name = "Crosswords_classic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Уровень \"Классический\"";
+            this.MouseHover += new System.EventHandler(this.Crosswords_classic_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_crossword_area)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1372,25 +1404,25 @@
         private My_controrls.RoundButton rndBtn_instruction;
         private System.Windows.Forms.PictureBox pctBox_crossword_area;
         private My_controrls.CustomTextBox custTxtBox_10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox qw_1;
         private My_controrls.CustomTextBox custTxtBox_11;
         private My_controrls.CustomTextBox custTxtBox_12_60;
         private My_controrls.CustomTextBox custTxtBox_13;
         private My_controrls.CustomTextBox custTxtBox_14_90;
         private My_controrls.CustomTextBox custTxtBox_15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox qw_6;
         private My_controrls.CustomTextBox custTxtBox_61;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox qw_9;
         private My_controrls.CustomTextBox custTxtBox_91;
         private My_controrls.CustomTextBox custTxtBox_51_62;
         private My_controrls.CustomTextBox custTxtBox_50;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox qw_5;
         private My_controrls.CustomTextBox custTxtBox_52;
         private My_controrls.CustomTextBox custTxtBox_53_92;
         private My_controrls.CustomTextBox custTxtBox_54_100;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox qw_10;
         private My_controrls.CustomTextBox custTxtBox_20;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox qw_2;
         private My_controrls.CustomTextBox custTxtBox_63;
         private My_controrls.CustomTextBox custTxtBox_101;
         private My_controrls.CustomTextBox custTxtBox_21_30;
@@ -1398,20 +1430,20 @@
         private My_controrls.CustomTextBox custTxtBox_64_32;
         private My_controrls.CustomTextBox custTxtBox_33;
         private My_controrls.CustomTextBox custTxtBox_102;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox qw_3;
         private My_controrls.CustomTextBox custTxtBox_22;
         private My_controrls.CustomTextBox custTxtBox_23;
         private My_controrls.CustomTextBox custTxtBox_70;
         private My_controrls.CustomTextBox custTxtBox_110;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox qw_7;
+        private System.Windows.Forms.TextBox qw_11;
         private My_controrls.CustomTextBox custTxtBox_24_40;
         private My_controrls.CustomTextBox custTxtBox_41;
         private My_controrls.CustomTextBox custTxtBox_71_42;
         private My_controrls.CustomTextBox custTxtBox_43;
         private My_controrls.CustomTextBox custTxtBox_44;
         private My_controrls.CustomTextBox custTxtBox_45_111;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox qw_4;
         private My_controrls.CustomTextBox custTxtBox_25;
         private My_controrls.CustomTextBox custTxtBox_72;
         private My_controrls.CustomTextBox custTxtBox_112;
@@ -1420,6 +1452,7 @@
         private My_controrls.CustomTextBox custTxtBox_81;
         private My_controrls.CustomTextBox custTxtBox_82;
         private My_controrls.CustomTextBox custTxtBox_83_113;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox qw_8;
+        private My_controrls.CustomTextBox Area_qw_1;
     }
 }
