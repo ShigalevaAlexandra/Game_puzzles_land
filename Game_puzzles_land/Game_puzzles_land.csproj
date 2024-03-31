@@ -124,6 +124,12 @@
     <Compile Include="Nine_instruction.Designer.cs">
       <DependentUpon>Nine_instruction.cs</DependentUpon>
     </Compile>
+    <Compile Include="No_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="No_help.Designer.cs">
+      <DependentUpon>No_help.cs</DependentUpon>
+    </Compile>
     <Compile Include="Numberbus_instruction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Winner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winner.Designer.cs">
+      <DependentUpon>Winner.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Angle_instruction.resx">
       <DependentUpon>Angle_instruction.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +180,9 @@
     <EmbeddedResource Include="Nine_instruction.resx">
       <DependentUpon>Nine_instruction.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="No_help.resx">
+      <DependentUpon>No_help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Numberbus_instruction.resx">
       <DependentUpon>Numberbus_instruction.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +190,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winner.resx">
+      <DependentUpon>Winner.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="fonts\seymour-one.ttf" />
     <None Include="Properties\Settings.settings">
@@ -197,6 +215,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\area_speak.png" />
+    <None Include="Resources\area_speak_popugai.png" />
     <Content Include="Resources\bcgr_choice.png" />
     <None Include="Resources\bcgr_fillwords_angle.png" />
     <None Include="Resources\bcgr_instruction_angle.png" />
@@ -206,11 +226,17 @@
     <None Include="Resources\bcgr_instruction_classic.png" />
     <None Include="Resources\bcgr_crossword_numberbus.png" />
     <None Include="Resources\bcgr_instruction_numberbus.png" />
+    <None Include="Resources\bcgr_help_0.png" />
+    <None Include="Resources\bcgr_help_count.png" />
     <Content Include="Resources\bcgr_main_menu.png" />
     <None Include="Resources\primer_area_angle.png" />
     <None Include="Resources\primer_area_nine.png" />
     <None Include="Resources\primer_area_classic.png" />
     <None Include="Resources\primer_area_numberbus.png" />
+    <None Include="Resources\lenivec.png" />
+    <None Include="Resources\bcgr_winner.png" />
+    <None Include="Resources\popugai_bad.png" />
+    <None Include="Resources\popugai_happy.png" />
     <Content Include="Resources\title_game.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -63,6 +63,16 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap area_speak_popugai {
+            get {
+                object obj = ResourceManager.GetObject("area_speak_popugai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bcgr_choice {
             get {
                 object obj = ResourceManager.GetObject("bcgr_choice", resourceCulture);
@@ -113,6 +123,26 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bcgr_help_0 {
+            get {
+                object obj = ResourceManager.GetObject("bcgr_help_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bcgr_help_count {
+            get {
+                object obj = ResourceManager.GetObject("bcgr_help_count", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bcgr_instruction_angle {
             get {
                 object obj = ResourceManager.GetObject("bcgr_instruction_angle", resourceCulture);
@@ -156,6 +186,36 @@ namespace Game_puzzles_land.Properties {
         internal static System.Drawing.Bitmap bcgr_main_menu {
             get {
                 object obj = ResourceManager.GetObject("bcgr_main_menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bcgr_winner {
+            get {
+                object obj = ResourceManager.GetObject("bcgr_winner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap popugai_bad {
+            get {
+                object obj = ResourceManager.GetObject("popugai_bad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap popugai_happy {
+            get {
+                object obj = ResourceManager.GetObject("popugai_happy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

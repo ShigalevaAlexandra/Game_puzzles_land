@@ -37,6 +37,7 @@ namespace Game_puzzles_land.My_controrls
         private bool isPlaceholder = false;
         private bool isPasswordChar = false;
         private bool readOnly = false;
+        private int maxLength = 1;
 
         public CustomTextBox()
         {
@@ -134,7 +135,7 @@ namespace Game_puzzles_land.My_controrls
             get { return textBox1.Multiline; }
             set { textBox1.Multiline = value; }
         }
-        [Category("RJ Code Advance")]
+       
         public override Color BackColor
         {
             get { return base.BackColor; }
@@ -220,6 +221,12 @@ namespace Game_puzzles_land.My_controrls
         {
             get { return textBox1.ReadOnly; }
             set { textBox1.ReadOnly = value; }
+        }
+
+        public int MaxLength
+        {
+            get { return textBox1.MaxLength; }
+            set { textBox1.MaxLength = value; }
         }
 
         private void SetPlaceholder()
