@@ -22,8 +22,8 @@ namespace Game_puzzles_land
         int correct_answers = 0;   //кол-во правильно введенных слов в поля кроссворда
 
         //переменные для определения было проверено поле кроссворда или нет
-        int visible_1 = 0, visible_2 = 0, visible_3 = 0, visible_4 = 0, visible_5 = 0,
-            visible_6 = 0, visible_7 = 0, visible_8 = 0, visible_9 = 0, visible_10 = 0, visible_11 = 0;
+        bool visible_1 = false, visible_2 = false, visible_3 = false, visible_4 = false, visible_5 = false,
+             visible_6 = false, visible_7 = false, visible_8 = false, visible_9 = false, visible_10 = false, visible_11 = false;
 
         //список для записи открытх ячеек кроссворда при поощи подсказки
         List<int> help_open = new List<int>(count_cell);
@@ -47,6 +47,8 @@ namespace Game_puzzles_land
         //переменные для записи введенных слов в кроссворд
         string words_1 = "", words_2 = "", words_3 = "", words_4 = "", words_5 = "",
                words_6 = "", words_7 = "", words_8 = "", words_9 = "", words_10 = "", words_11 = "";
+
+        bool is_winner = false;  //проверка уровня на завершение
 
         public Crosswords_classic()
         {
@@ -111,7 +113,7 @@ namespace Game_puzzles_land
                     custTxtBox_14_90.BackColor = Color.PapayaWhip;
                     custTxtBox_15.BackColor = Color.PapayaWhip;
 
-                    if (visible_1 < 1)
+                    if (visible_1 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -131,7 +133,7 @@ namespace Game_puzzles_land
                         help_open.Add(1); help_open.Add(2); help_open.Add(3); help_open.Add(4); help_open.Add(5); help_open.Add(6);
                     }
 
-                    visible_1++;
+                    visible_1 = true;
                 }
 
                 //проверка второго слова
@@ -149,7 +151,7 @@ namespace Game_puzzles_land
                     custTxtBox_25.BackColor = Color.PapayaWhip;
                     custTxtBox_26.BackColor = Color.PapayaWhip;
 
-                    if (visible_2 < 1)
+                    if (visible_2 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -170,7 +172,7 @@ namespace Game_puzzles_land
                         help_open.Add(7); help_open.Add(8); help_open.Add(9); help_open.Add(10); help_open.Add(11); help_open.Add(12); help_open.Add(13);
                     }
 
-                    visible_2++;
+                    visible_2 = true;
                 }
 
                 //проверка третьего слова
@@ -183,7 +185,7 @@ namespace Game_puzzles_land
                     custTxtBox_64_32.BackColor = Color.PapayaWhip;
                     custTxtBox_33.BackColor = Color.PapayaWhip;
 
-                    if (visible_3 < 1)
+                    if (visible_3 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -199,7 +201,7 @@ namespace Game_puzzles_land
                         help_open.Add(8); help_open.Add(14); help_open.Add(15); help_open.Add(16);
                     }
 
-                    visible_3++;
+                    visible_3 = true;
                 }
 
                 //проверка четвертого слова
@@ -214,7 +216,7 @@ namespace Game_puzzles_land
                     custTxtBox_44.BackColor = Color.PapayaWhip;
                     custTxtBox_45_111.BackColor = Color.PapayaWhip;
 
-                    if (visible_4 < 1)
+                    if (visible_4 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -232,7 +234,7 @@ namespace Game_puzzles_land
                         help_open.Add(11); help_open.Add(17); help_open.Add(18); help_open.Add(19); help_open.Add(20); help_open.Add(21);
                     }
 
-                    visible_4++;
+                    visible_4 = true;
                 }
 
                 //проверка пятого слова
@@ -247,7 +249,7 @@ namespace Game_puzzles_land
                     custTxtBox_53_92.BackColor = Color.PapayaWhip;
                     custTxtBox_54_100.BackColor = Color.PapayaWhip;
 
-                    if (visible_5 < 1)
+                    if (visible_5 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -265,7 +267,7 @@ namespace Game_puzzles_land
                         help_open.Add(22); help_open.Add(23); help_open.Add(24); help_open.Add(25); help_open.Add(26);
                     }
 
-                    visible_5++;
+                    visible_5 = true;
                 }
 
                 //проверка шестого слова
@@ -279,7 +281,7 @@ namespace Game_puzzles_land
                     custTxtBox_63.BackColor = Color.PapayaWhip;
                     custTxtBox_64_32.BackColor = Color.PapayaWhip;
 
-                    if (visible_6 < 1)
+                    if (visible_6 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -296,7 +298,7 @@ namespace Game_puzzles_land
                         help_open.Add(3); help_open.Add(27); help_open.Add(23); help_open.Add(28); help_open.Add(15);
                     }
 
-                    visible_6++;
+                    visible_6 = true;
                 }
 
                 //проверка седьмого слова
@@ -310,7 +312,7 @@ namespace Game_puzzles_land
                     custTxtBox_72.BackColor = Color.PapayaWhip;
                     custTxtBox_73_80.BackColor = Color.PapayaWhip;
 
-                    if (visible_7 < 1)
+                    if (visible_7 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -327,7 +329,7 @@ namespace Game_puzzles_land
                         help_open.Add(29); help_open.Add(18); help_open.Add(30); help_open.Add(31);
                     }
 
-                    visible_7++;
+                    visible_7 = true;
                 }
 
                 //проверка восьмого слова
@@ -340,7 +342,7 @@ namespace Game_puzzles_land
                     custTxtBox_82.BackColor = Color.PapayaWhip;
                     custTxtBox_83_113.BackColor = Color.PapayaWhip;
 
-                    if (visible_8 < 1)
+                    if (visible_8 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -356,7 +358,7 @@ namespace Game_puzzles_land
                         help_open.Add(31); help_open.Add(32); help_open.Add(33); help_open.Add(34);
                     }
 
-                    visible_8++;
+                    visible_8 = true;
                 }
 
                 //проверка девятого слова
@@ -368,7 +370,7 @@ namespace Game_puzzles_land
                     custTxtBox_91.BackColor = Color.PapayaWhip;
                     custTxtBox_53_92.BackColor = Color.PapayaWhip;
 
-                    if (visible_9 < 1)
+                    if (visible_9 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -383,7 +385,7 @@ namespace Game_puzzles_land
                         help_open.Add(5); help_open.Add(35); help_open.Add(25);
                     }
 
-                    visible_9++;
+                    visible_9 = true;
                 }
 
                 //проверка десятого слова
@@ -395,7 +397,7 @@ namespace Game_puzzles_land
                     custTxtBox_101.BackColor = Color.PapayaWhip;
                     custTxtBox_102.BackColor = Color.PapayaWhip;
 
-                    if (visible_10 < 1)
+                    if (visible_10 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -410,7 +412,7 @@ namespace Game_puzzles_land
                         help_open.Add(26); help_open.Add(36); help_open.Add(37);
                     }
 
-                    visible_10++;
+                    visible_10 = true;
                 }
 
                 //проверка одиннадцатого слова
@@ -423,7 +425,7 @@ namespace Game_puzzles_land
                     custTxtBox_112.BackColor = Color.PapayaWhip;
                     custTxtBox_83_113.BackColor = Color.PapayaWhip;
 
-                    if (visible_11 < 1)
+                    if (visible_11 == false)
                     {
                         //повторное начисление прогресса недоступно
                         correct_answers++;
@@ -440,18 +442,23 @@ namespace Game_puzzles_land
                         help_open.Add(38); help_open.Add(21); help_open.Add(39); help_open.Add(34);
                     }
 
-                    visible_11++;
+                    visible_11 = true;
                 }
 
                 strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
             }
             else
             {
-                strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
-                rndBtn_help.Enabled = false;
+                if(is_winner == false)
+                {
+                    strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
+                    rndBtn_help.Enabled = false;
 
-                Winner winner = new Winner();
-                winner.Show();
+                    Winner winner = new Winner();
+                    winner.Show();
+
+                    is_winner = true;
+                }
             }
         }
 
