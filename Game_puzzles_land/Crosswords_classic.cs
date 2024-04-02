@@ -45,8 +45,8 @@ namespace Game_puzzles_land
                 };
 
         //переменные для записи введенных слов в кроссворд
-        string words_1 = "", words_2 = "", words_3 = "", words_4 = "", words_5 = "",
-               words_6 = "", words_7 = "", words_8 = "", words_9 = "", words_10 = "", words_11 = "";
+        string word_1 = "", word_2 = "", word_3 = "", word_4 = "", word_5 = "",
+               word_6 = "", word_7 = "", word_8 = "", word_9 = "", word_10 = "", word_11 = "";
 
         bool is_winner = false;  //проверка уровня на завершение
 
@@ -80,27 +80,38 @@ namespace Game_puzzles_land
             strLabel_help_count.Font = new Font(my_font.Families[0], 18);
         }
 
+        private void symbol_success_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //ограничение вводимых символов (можно вводить только символы Аа-Яя)
+            string Symbol = e.KeyChar.ToString();
+
+            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
         //функция проверки введенных ответов пользователем в поля кроссворда
         private void User_answers()
         {
             if (correct_answers < count_answers)
             {
                 //получение ответов, введенных пользователем
-                words_1 = custTxtBox_10.Texts + custTxtBox_11.Texts + custTxtBox_12_60.Texts + custTxtBox_13.Texts + custTxtBox_14_90.Texts + custTxtBox_15.Texts;
-                words_2 = custTxtBox_20.Texts + custTxtBox_21_30.Texts + custTxtBox_22.Texts + custTxtBox_23.Texts + custTxtBox_24_40.Texts + custTxtBox_25.Texts + custTxtBox_26.Texts;
-                words_3 = custTxtBox_21_30.Texts + custTxtBox_31.Texts + custTxtBox_64_32.Texts + custTxtBox_33.Texts;
-                words_4 = custTxtBox_24_40.Texts + custTxtBox_41.Texts + custTxtBox_71_42.Texts + custTxtBox_43.Texts + custTxtBox_44.Texts + custTxtBox_45_111.Texts;
-                words_5 = custTxtBox_50.Texts + custTxtBox_51_62.Texts + custTxtBox_52.Texts + custTxtBox_53_92.Texts + custTxtBox_54_100.Texts;
-                words_6 = custTxtBox_12_60.Texts + custTxtBox_61.Texts + custTxtBox_51_62.Texts + custTxtBox_63.Texts + custTxtBox_64_32.Texts;
-                words_7 = custTxtBox_70.Texts + custTxtBox_71_42.Texts + custTxtBox_72.Texts + custTxtBox_73_80.Texts;
-                words_8 = custTxtBox_73_80.Texts + custTxtBox_81.Texts + custTxtBox_82.Texts + custTxtBox_83_113.Texts;
-                words_9 = custTxtBox_14_90.Texts + custTxtBox_91.Texts + custTxtBox_53_92.Texts;
-                words_10 = custTxtBox_54_100.Texts + custTxtBox_101.Texts + custTxtBox_102.Texts;
-                words_11 = custTxtBox_110.Texts + custTxtBox_45_111.Texts + custTxtBox_112.Texts + custTxtBox_83_113.Texts;
+                word_1 = custTxtBox_10.Texts + custTxtBox_11.Texts + custTxtBox_12_60.Texts + custTxtBox_13.Texts + custTxtBox_14_90.Texts + custTxtBox_15.Texts;
+                word_2 = custTxtBox_20.Texts + custTxtBox_21_30.Texts + custTxtBox_22.Texts + custTxtBox_23.Texts + custTxtBox_24_40.Texts + custTxtBox_25.Texts + custTxtBox_26.Texts;
+                word_3 = custTxtBox_21_30.Texts + custTxtBox_31.Texts + custTxtBox_64_32.Texts + custTxtBox_33.Texts;
+                word_4 = custTxtBox_24_40.Texts + custTxtBox_41.Texts + custTxtBox_71_42.Texts + custTxtBox_43.Texts + custTxtBox_44.Texts + custTxtBox_45_111.Texts;
+                word_5 = custTxtBox_50.Texts + custTxtBox_51_62.Texts + custTxtBox_52.Texts + custTxtBox_53_92.Texts + custTxtBox_54_100.Texts;
+                word_6 = custTxtBox_12_60.Texts + custTxtBox_61.Texts + custTxtBox_51_62.Texts + custTxtBox_63.Texts + custTxtBox_64_32.Texts;
+                word_7 = custTxtBox_70.Texts + custTxtBox_71_42.Texts + custTxtBox_72.Texts + custTxtBox_73_80.Texts;
+                word_8 = custTxtBox_73_80.Texts + custTxtBox_81.Texts + custTxtBox_82.Texts + custTxtBox_83_113.Texts;
+                word_9 = custTxtBox_14_90.Texts + custTxtBox_91.Texts + custTxtBox_53_92.Texts;
+                word_10 = custTxtBox_54_100.Texts + custTxtBox_101.Texts + custTxtBox_102.Texts;
+                word_11 = custTxtBox_110.Texts + custTxtBox_45_111.Texts + custTxtBox_112.Texts + custTxtBox_83_113.Texts;
 
                 //просмотр полей кроссворда на правильность введенных ответов
                 //проверка первого слова
-                if (words_1 == answers[0])
+                if (word_1 == answers[0])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_1.BackColor = Color.PapayaWhip;
@@ -137,7 +148,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка второго слова
-                if (words_2 == answers[1])
+                if (word_2 == answers[1])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_2.BackColor = Color.PapayaWhip;
@@ -176,7 +187,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка третьего слова
-                if (words_3 == answers[2])
+                if (word_3 == answers[2])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_3.BackColor = Color.PapayaWhip;
@@ -205,7 +216,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка четвертого слова
-                if (words_4 == answers[3])
+                if (word_4 == answers[3])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_4.BackColor = Color.PapayaWhip;
@@ -238,7 +249,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка пятого слова
-                if (words_5 == answers[4])
+                if (word_5 == answers[4])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_5.BackColor = Color.PapayaWhip;
@@ -271,7 +282,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка шестого слова
-                if (words_6 == answers[5])
+                if (word_6 == answers[5])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_6.BackColor = Color.PapayaWhip;
@@ -302,7 +313,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка седьмого слова
-                if (words_7 == answers[6])
+                if (word_7 == answers[6])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_7.BackColor = Color.PapayaWhip;
@@ -333,7 +344,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка восьмого слова
-                if (words_8 == answers[7])
+                if (word_8 == answers[7])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_8.BackColor = Color.PapayaWhip;
@@ -362,7 +373,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка девятого слова
-                if (words_9 == answers[8])
+                if (word_9 == answers[8])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_9.BackColor = Color.PapayaWhip;
@@ -389,7 +400,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка десятого слова
-                if (words_10 == answers[9])
+                if (word_10 == answers[9])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_10.BackColor = Color.PapayaWhip;
@@ -416,7 +427,7 @@ namespace Game_puzzles_land
                 }
 
                 //проверка одиннадцатого слова
-                if (words_11 == answers[10])
+                if (word_11 == answers[10])
                 {
                     //смена заднего фона полей кросворда - выделение правильно введенных слов
                     qw_11.BackColor = Color.PapayaWhip;
@@ -806,12 +817,13 @@ namespace Game_puzzles_land
         }
 
         //навигация меню уровень "Классический"
-        private void Crosswords_classic_MouseHover(object sender, EventArgs e)
+
+        private void Crosswords_classic_MouseMove(object sender, MouseEventArgs e)
         {
             User_answers();
         }
 
-        private void pctBox_crossword_area_MouseHover(object sender, EventArgs e)
+        private void pctBox_crossword_area_MouseMove(object sender, MouseEventArgs e)
         {
             User_answers();
         }
@@ -819,17 +831,6 @@ namespace Game_puzzles_land
         private void rndBtn_help_Click(object sender, EventArgs e)
         {
             Help_answer();
-        }
-
-        private void symbol_success_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //ограничение вводимых символов (можно вводить только символы Аа-Яя)
-            string Symbol = e.KeyChar.ToString();
-
-            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
-            {
-                e.Handled = true;
-            }
         }
 
         private void VisibleTrue_MouseMove(object sender, MouseEventArgs e)

@@ -115,7 +115,7 @@
             this.pctBox_crossword_area.Size = new System.Drawing.Size(657, 390);
             this.pctBox_crossword_area.TabIndex = 24;
             this.pctBox_crossword_area.TabStop = false;
-            this.pctBox_crossword_area.MouseHover += new System.EventHandler(this.pctBox_crossword_area_MouseHover);
+            this.pctBox_crossword_area.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pctBox_crossword_area_MouseMove);
             // 
             // qw_1
             // 
@@ -1804,7 +1804,7 @@
             this.Name = "Crosswords_classic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Уровень \"Классический\"";
-            this.MouseHover += new System.EventHandler(this.Crosswords_classic_MouseHover);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Crosswords_classic_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_crossword_area)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_help_count)).EndInit();
             this.ResumeLayout(false);

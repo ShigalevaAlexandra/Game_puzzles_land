@@ -237,6 +237,9 @@
     <None Include="Resources\bcgr_winner.png" />
     <None Include="Resources\popugai_bad.png" />
     <None Include="Resources\popugai_happy.png" />
+    <None Include="Resources\bcgr_winner1.png" />
+    <None Include="Resources\bcgr_none_help.png" />
+    <None Include="Resources\popugai_unhappy.png" />
     <Content Include="Resources\title_game.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

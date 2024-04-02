@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Game_puzzles_land.Properties.Resources.bcgr_help_0;
+            this.BackgroundImage = global::Game_puzzles_land.Properties.Resources.bcgr_winner1;
             this.ClientSize = new System.Drawing.Size(554, 351);
             this.Controls.Add(this.rndBtn_ok);
             this.Controls.Add(this.strLabel_winner);

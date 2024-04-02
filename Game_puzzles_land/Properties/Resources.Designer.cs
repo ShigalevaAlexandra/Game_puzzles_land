@@ -123,16 +123,6 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bcgr_help_0 {
-            get {
-                object obj = ResourceManager.GetObject("bcgr_help_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bcgr_help_count {
             get {
                 object obj = ResourceManager.GetObject("bcgr_help_count", resourceCulture);
@@ -193,6 +183,16 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bcgr_none_help {
+            get {
+                object obj = ResourceManager.GetObject("bcgr_none_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bcgr_winner {
             get {
                 object obj = ResourceManager.GetObject("bcgr_winner", resourceCulture);
@@ -203,9 +203,9 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap popugai_bad {
+        internal static System.Drawing.Bitmap bcgr_winner1 {
             get {
-                object obj = ResourceManager.GetObject("popugai_bad", resourceCulture);
+                object obj = ResourceManager.GetObject("bcgr_winner1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +216,16 @@ namespace Game_puzzles_land.Properties {
         internal static System.Drawing.Bitmap popugai_happy {
             get {
                 object obj = ResourceManager.GetObject("popugai_happy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap popugai_unhappy {
+            get {
+                object obj = ResourceManager.GetObject("popugai_unhappy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

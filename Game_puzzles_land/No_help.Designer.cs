@@ -39,7 +39,7 @@
             // pictBox_popugai_bad
             // 
             this.pictBox_popugai_bad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictBox_popugai_bad.Image = global::Game_puzzles_land.Properties.Resources.popugai_bad;
+            this.pictBox_popugai_bad.Image = global::Game_puzzles_land.Properties.Resources.popugai_unhappy;
             this.pictBox_popugai_bad.Location = new System.Drawing.Point(30, 97);
             this.pictBox_popugai_bad.Name = "pictBox_popugai_bad";
             this.pictBox_popugai_bad.Size = new System.Drawing.Size(181, 196);
@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Game_puzzles_land.Properties.Resources.bcgr_help_0;
+            this.BackgroundImage = global::Game_puzzles_land.Properties.Resources.bcgr_none_help;
             this.ClientSize = new System.Drawing.Size(550, 347);
             this.ControlBox = false;
             this.Controls.Add(this.rndBtn_ok);
