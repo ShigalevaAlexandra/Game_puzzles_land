@@ -193,7 +193,7 @@
             this.pctBox_crossword_area.Size = new System.Drawing.Size(657, 390);
             this.pctBox_crossword_area.TabIndex = 25;
             this.pctBox_crossword_area.TabStop = false;
-            this.pctBox_crossword_area.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pctBox_crossword_area_MouseMove);
+            this.pctBox_crossword_area.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Crossword_numberbus_MouseMove);
             // 
             // pictureBox1
             // 
@@ -236,7 +236,7 @@
             this.strLbl_value_progress.OutlineWidth = 3F;
             this.strLbl_value_progress.Size = new System.Drawing.Size(110, 48);
             this.strLbl_value_progress.TabIndex = 28;
-            this.strLbl_value_progress.Text = "0%";
+            this.strLbl_value_progress.Text = "0";
             // 
             // strLbl_record
             // 
@@ -268,7 +268,7 @@
             this.strLbl_value_record.OutlineWidth = 3F;
             this.strLbl_value_record.Size = new System.Drawing.Size(110, 48);
             this.strLbl_value_record.TabIndex = 30;
-            this.strLbl_value_record.Text = "0%";
+            this.strLbl_value_record.Text = "0";
             // 
             // custTxtBox_95
             // 
@@ -1358,9 +1358,9 @@
             this.strLabel_help_count.Name = "strLabel_help_count";
             this.strLabel_help_count.OutlineForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(69)))), ((int)(((byte)(127)))));
             this.strLabel_help_count.OutlineWidth = 3F;
-            this.strLabel_help_count.Size = new System.Drawing.Size(59, 48);
+            this.strLabel_help_count.Size = new System.Drawing.Size(50, 48);
             this.strLabel_help_count.TabIndex = 123;
-            this.strLabel_help_count.Text = "10";
+            this.strLabel_help_count.Text = "5";
             // 
             // lbl_10
             // 

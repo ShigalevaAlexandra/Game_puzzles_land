@@ -52,5 +52,11 @@ namespace Game_puzzles_land
         {
             this.Close();
         }
+
+        private void rndBtn_record_Click(object sender, EventArgs e)
+        {
+            Table_record table_Record = new Table_record();
+            table_Record.Show();
+        }
     }
 }

@@ -193,9 +193,9 @@ namespace Game_puzzles_land.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bcgr_winner {
+        internal static System.Drawing.Bitmap bcgr_table_record {
             get {
-                object obj = ResourceManager.GetObject("bcgr_winner", resourceCulture);
+                object obj = ResourceManager.GetObject("bcgr_table_record", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

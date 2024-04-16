@@ -84,6 +84,7 @@
             this.rndBtn_record.Text = "Достижения";
             this.rndBtn_record.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(153)))), ((int)(((byte)(95)))));
             this.rndBtn_record.UseVisualStyleBackColor = false;
+            this.rndBtn_record.Click += new System.EventHandler(this.rndBtn_record_Click);
             // 
             // rndBtn_exit
             // 

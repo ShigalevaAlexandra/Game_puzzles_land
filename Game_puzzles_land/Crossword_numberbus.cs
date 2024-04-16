@@ -27,7 +27,7 @@ namespace Game_puzzles_land
 
         //список для записи открытх ячеек кроссворда при поощи подсказки
         List<int> help_open = new List<int>(count_cell);
-        int help_count = 10;   //кол-во подсказок
+        int help_count = 5;   //кол-во подсказок
 
         string[] answers = new string[count_answers]   //массив чисел кроссворда
                {
@@ -44,12 +44,16 @@ namespace Game_puzzles_land
                number_13 = "", number_14 = "", number_15 = "", number_16 = "", number_17 = "", number_18 = "";
 
         bool is_winner = false;  //проверка уровня на завершение
+        int user_progress = 0;   //прогресс решения кроссворда пользователем
 
         public Crossword_numberbus()
         {
             InitializeComponent();
             Add_my_font();
             Use_my_font();
+
+            //вывод сохраненных парамеров приложения
+            strLbl_value_record.Text = Convert.ToString(Properties.Settings.Default.CrosswordNumberbusRecord) + "%";  //рекорд
         }
 
         //функция для загрузки шрифтов в приложение
@@ -75,6 +79,7 @@ namespace Game_puzzles_land
             strLabel_help_count.Font = new Font(my_font.Families[0], 18);
         }
 
+        //функция, ограничивающая список доступных значений для полей кроссворда
         private void symbol_success_KeyPress(object sender, KeyPressEventArgs e)
         {
             //ограничение вводимых символов (можно вводить только символы Аа-Яя)
@@ -83,6 +88,20 @@ namespace Game_puzzles_land
             if (!Regex.Match(Symbol, @"[0-9]").Success)
             {
                 e.Handled = true;
+            }
+        }
+
+        //функция обновления вывода рекорда пользователя (лучшего результата)
+        private void check_user_progress()
+        {
+            user_progress = (correct_answers * 100) / count_answers;
+            strLbl_value_progress.Text = Convert.ToString(user_progress) + "%";
+
+            //Сохранение значения прогресса решения головоломки в параметрах приложения
+            if (user_progress >= Properties.Settings.Default.CrosswordNumberbusRecord)
+            {
+                Properties.Settings.Default.CrosswordNumberbusRecord = user_progress;
+                Properties.Settings.Default.Save();
             }
         }
 
@@ -632,13 +651,14 @@ namespace Game_puzzles_land
                     visible_18 = true;
                 }
 
-                strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
+                check_user_progress();
             }
             else
             {
                 if (is_winner == false)
                 {
-                    strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
+                    check_user_progress();
+
                     rndBtn_help.Enabled = false;
 
                     Winner winner = new Winner();
@@ -1013,19 +1033,15 @@ namespace Game_puzzles_land
             else strLabel_help_count.Text = help_count.ToString();
         }
 
-        //навигация меню "Выбор вида головоломки"
-        private void pctBox_crossword_area_MouseMove(object sender, MouseEventArgs e)
-        {
-            User_answers();
-        }
-
         private void Crossword_numberbus_MouseMove(object sender, MouseEventArgs e)
         {
+            //объявление правильно решенных полей кроссворда
             User_answers();
         }
 
         private void rndBtn_help_Click(object sender, EventArgs e)
         {
+            //использование подсказки
             Help_answer();
         }
 

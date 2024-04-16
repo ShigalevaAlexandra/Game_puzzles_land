@@ -27,7 +27,7 @@ namespace Game_puzzles_land
 
         //список для записи открытх ячеек кроссворда при поощи подсказки
         List<int> help_open = new List<int>(count_cell);
-        int help_count = 10;   //кол-во подсказок
+        int help_count = 5;   //кол-во подсказок
 
         string[] answers = new string[count_answers]   //массив слов кроссворда
                 {
@@ -49,12 +49,17 @@ namespace Game_puzzles_land
                word_6 = "", word_7 = "", word_8 = "", word_9 = "", word_10 = "", word_11 = "";
 
         bool is_winner = false;  //проверка уровня на завершение
+        int user_progress = 0;   //прогресс решения кроссворда пользователем
 
         public Crosswords_classic()
         {
             InitializeComponent();
             Add_my_font();
             Use_my_font();
+
+            //вывод сохраненных парамеров приложения
+            strLbl_value_record.Text = Convert.ToString(Properties.Settings.Default.CrosswordClassicRecord) + "%";  //рекорд
+
         }
 
         //функция для загрузки шрифтов в приложение
@@ -80,6 +85,7 @@ namespace Game_puzzles_land
             strLabel_help_count.Font = new Font(my_font.Families[0], 18);
         }
 
+        //функция, ограничивающая список доступных значений для полей кроссворда
         private void symbol_success_KeyPress(object sender, KeyPressEventArgs e)
         {
             //ограничение вводимых символов (можно вводить только символы Аа-Яя)
@@ -88,6 +94,20 @@ namespace Game_puzzles_land
             if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
             {
                 e.Handled = true;
+            }
+        }
+
+        //функция обновления вывода рекорда пользователя (лучшего результата)
+        private void check_user_progress()
+        {
+            user_progress = (correct_answers * 100) / count_answers;
+            strLbl_value_progress.Text = Convert.ToString(user_progress) + "%";
+
+            //Сохранение значения прогресса решения головоломки в параметрах приложения
+            if (user_progress >= Properties.Settings.Default.CrosswordClassicRecord)
+            {
+                Properties.Settings.Default.CrosswordClassicRecord = user_progress;
+                Properties.Settings.Default.Save();
             }
         }
 
@@ -456,13 +476,14 @@ namespace Game_puzzles_land
                     visible_11 = true;
                 }
 
-                strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
+                check_user_progress();
             }
             else
             {
                 if(is_winner == false)
                 {
-                    strLbl_value_progress.Text = Convert.ToString(Convert.ToInt32((correct_answers * 100) / count_answers)) + " %";
+                    check_user_progress();
+
                     rndBtn_help.Enabled = false;
 
                     Winner winner = new Winner();
@@ -546,6 +567,7 @@ namespace Game_puzzles_land
 
                     case 7:
                         custTxtBox_20.Texts = "б";
+                        qw_2.BackColor = Color.LightCyan;
                         custTxtBox_20.BackColor = Color.LightCyan;
                         custTxtBox_20.ReadOnly = true;
 
@@ -554,6 +576,7 @@ namespace Game_puzzles_land
 
                     case 8:
                         custTxtBox_21_30.Texts = "а";
+                        qw_3.BackColor = Color.LightCyan;
                         custTxtBox_21_30.BackColor = Color.LightCyan;
                         custTxtBox_21_30.ReadOnly = true;
 
@@ -578,6 +601,7 @@ namespace Game_puzzles_land
 
                     case 11:
                         custTxtBox_24_40.Texts = "ч";
+                        qw_4.BackColor = Color.LightCyan;
                         custTxtBox_24_40.BackColor = Color.LightCyan;
                         custTxtBox_24_40.ReadOnly = true;
 
@@ -666,6 +690,7 @@ namespace Game_puzzles_land
 
                     case 22:
                         custTxtBox_50.Texts = "с";
+                        qw_5.BackColor = Color.LightCyan;
                         custTxtBox_50.BackColor = Color.LightCyan;
                         custTxtBox_50.ReadOnly = true;
 
@@ -698,6 +723,7 @@ namespace Game_puzzles_land
 
                     case 26:
                         custTxtBox_54_100.Texts = "а";
+                        qw_10.BackColor = Color.LightCyan;
                         custTxtBox_54_100.BackColor = Color.LightCyan;
                         custTxtBox_54_100.ReadOnly = true;
 
@@ -722,6 +748,7 @@ namespace Game_puzzles_land
 
                     case 29:
                         custTxtBox_70.Texts = "а";
+                        qw_7.BackColor = Color.LightCyan;
                         custTxtBox_70.BackColor = Color.LightCyan;
                         custTxtBox_70.ReadOnly = true;
 
@@ -738,6 +765,7 @@ namespace Game_puzzles_land
 
                     case 31:
                         custTxtBox_73_80.Texts = "а";
+                        qw_8.BackColor = Color.LightCyan;
                         custTxtBox_73_80.BackColor = Color.LightCyan;
                         custTxtBox_73_80.ReadOnly = true;
 
@@ -794,6 +822,7 @@ namespace Game_puzzles_land
 
                     case 38:
                         custTxtBox_110.Texts = "с";
+                        qw_11.BackColor = Color.LightCyan;
                         custTxtBox_110.BackColor = Color.LightCyan;
                         custTxtBox_110.ReadOnly = true;
 
@@ -816,20 +845,15 @@ namespace Game_puzzles_land
             else strLabel_help_count.Text = help_count.ToString();
         }
 
-        //навигация меню уровень "Классический"
-
         private void Crosswords_classic_MouseMove(object sender, MouseEventArgs e)
         {
-            User_answers();
-        }
-
-        private void pctBox_crossword_area_MouseMove(object sender, MouseEventArgs e)
-        {
+            //объявление правильно решенных полей кроссворда
             User_answers();
         }
 
         private void rndBtn_help_Click(object sender, EventArgs e)
         {
+            //использование подсказки
             Help_answer();
         }
 
@@ -942,7 +966,6 @@ namespace Game_puzzles_land
             //скрытие вопроса к выбранному полю кроссворда
             Area_qw_10.Visible = false;
         }
-
 
         private void custTxtBox_110_MouseMove(object sender, MouseEventArgs e)
         {
