@@ -48,8 +48,10 @@ namespace Game_puzzles_land
         string word_1 = "", word_2 = "", word_3 = "", word_4 = "", word_5 = "",
                word_6 = "", word_7 = "", word_8 = "", word_9 = "", word_10 = "", word_11 = "";
 
-        bool is_winner = false;  //проверка уровня на завершение
+        int user_number = 0;   //попытки прохождения уровня
         int user_progress = 0;   //прогресс решения кроссворда пользователем
+
+        bool is_winner = false;  //проверка уровня на завершение
 
         public Crosswords_classic()
         {
@@ -59,6 +61,7 @@ namespace Game_puzzles_land
 
             //вывод сохраненных парамеров приложения
             strLbl_value_record.Text = Convert.ToString(Properties.Settings.Default.CrosswordClassicRecord) + "%";  //рекорд
+            user_number = Properties.Settings.Default.CrosswordClassicNumber;   //попытки прохождения уровня
 
         }
 
@@ -107,6 +110,7 @@ namespace Game_puzzles_land
             if (user_progress >= Properties.Settings.Default.CrosswordClassicRecord)
             {
                 Properties.Settings.Default.CrosswordClassicRecord = user_progress;
+                Properties.Settings.Default.CrosswordClassicBestNumber = user_number;
                 Properties.Settings.Default.Save();
             }
         }
@@ -980,6 +984,11 @@ namespace Game_puzzles_land
 
         private void rndBtn_back_Click(object sender, EventArgs e)
         {
+            //сохранение номера попытки прохождения уровня
+            user_number++;
+            Properties.Settings.Default.CrosswordClassicNumber = user_number;
+            Properties.Settings.Default.Save();
+
             this.Close();
             Choice_crosswords choice_Crosswords = new Choice_crosswords();
             choice_Crosswords.Show();

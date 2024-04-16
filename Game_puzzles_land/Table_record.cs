@@ -24,6 +24,8 @@ namespace Game_puzzles_land
             //вывод сохраненных парамеров приложения
             lbl_crossword_classic_result.Text = Convert.ToString(Properties.Settings.Default.CrosswordClassicRecord) + "%";  //рекод в классическом
             lbl_crossword_numberbus_result.Text = Convert.ToString(Properties.Settings.Default.CrosswordNumberbusRecord) + "%";  //рекорд в числобусе
+            lbl_crossword_classic_number.Text = Convert.ToString(Properties.Settings.Default.CrosswordClassicBestNumber);  //номер попытки в классическом
+            lbl_crossword_numberbus_number.Text = Convert.ToString(Properties.Settings.Default.CrosswordNumberbusBestNumber);  //номер попытки в числобусе
         }
 
         //функция для загрузки шрифтов в приложение

@@ -43,8 +43,10 @@ namespace Game_puzzles_land
                number_7 = "", number_8 = "", number_9 = "", number_10 = "", number_11 = "", number_12 = "",
                number_13 = "", number_14 = "", number_15 = "", number_16 = "", number_17 = "", number_18 = "";
 
-        bool is_winner = false;  //проверка уровня на завершение
+        int user_number = 0;   //попытки прохождения уровня
         int user_progress = 0;   //прогресс решения кроссворда пользователем
+
+        bool is_winner = false;  //проверка уровня на завершение
 
         public Crossword_numberbus()
         {
@@ -54,6 +56,7 @@ namespace Game_puzzles_land
 
             //вывод сохраненных парамеров приложения
             strLbl_value_record.Text = Convert.ToString(Properties.Settings.Default.CrosswordNumberbusRecord) + "%";  //рекорд
+            user_number = Properties.Settings.Default.CrosswordNumberbusNumber;   //попытки прохождения уровня
         }
 
         //функция для загрузки шрифтов в приложение
@@ -101,6 +104,7 @@ namespace Game_puzzles_land
             if (user_progress >= Properties.Settings.Default.CrosswordNumberbusRecord)
             {
                 Properties.Settings.Default.CrosswordNumberbusRecord = user_progress;
+                Properties.Settings.Default.CrosswordNumberbusBestNumber = user_number;
                 Properties.Settings.Default.Save();
             }
         }
@@ -1047,6 +1051,10 @@ namespace Game_puzzles_land
 
         private void rndBtn_back_Click(object sender, EventArgs e)
         {
+            //сохранение номера попытки прохождения уровня
+            user_number++;
+            Properties.Settings.Default.CrosswordNumberbusNumber = user_number;
+
             this.Close();
             Choice_crosswords choice_Crosswords = new Choice_crosswords();
             choice_Crosswords.Show();

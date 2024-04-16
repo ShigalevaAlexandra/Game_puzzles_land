@@ -46,5 +46,53 @@ namespace Game_puzzles_land.Properties {
                 this["CrosswordNumberbusRecord"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CrosswordClassicNumber {
+            get {
+                return ((int)(this["CrosswordClassicNumber"]));
+            }
+            set {
+                this["CrosswordClassicNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CrosswordNumberbusNumber {
+            get {
+                return ((int)(this["CrosswordNumberbusNumber"]));
+            }
+            set {
+                this["CrosswordNumberbusNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CrosswordClassicBestNumber {
+            get {
+                return ((int)(this["CrosswordClassicBestNumber"]));
+            }
+            set {
+                this["CrosswordClassicBestNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CrosswordNumberbusBestNumber {
+            get {
+                return ((int)(this["CrosswordNumberbusBestNumber"]));
+            }
+            set {
+                this["CrosswordNumberbusBestNumber"] = value;
+            }
+        }
     }
 }
