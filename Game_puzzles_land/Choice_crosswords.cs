@@ -46,8 +46,8 @@ namespace Game_puzzles_land
         private void rndBtn_back_Click(object sender, EventArgs e)
         {
             this.Close();
-            Choice_puzzle choice_Puzzle = new Choice_puzzle();
-            choice_Puzzle.Show();
+            Main_menu main_Menu = new Main_menu();
+            main_Menu.Show();
         }
 
         private void rndBtn_classic_Click(object sender, EventArgs e)

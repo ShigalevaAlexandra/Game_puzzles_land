@@ -44,8 +44,8 @@ namespace Game_puzzles_land
         private void rndBtn_start_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Choice_puzzle choice_Puzzle = new Choice_puzzle();
-            choice_Puzzle.Show();
+            Choice_crosswords choice_Crosswords = new Choice_crosswords();
+            choice_Crosswords.Show();
         }
 
         private void rndBtn_exit_Click(object sender, EventArgs e)
@@ -55,6 +55,7 @@ namespace Game_puzzles_land
 
         private void rndBtn_record_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Table_record table_Record = new Table_record();
             table_Record.Show();
         }

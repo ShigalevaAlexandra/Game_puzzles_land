@@ -687,9 +687,9 @@ namespace Game_puzzles_land
             else
             {
                 Random words = new Random();
-                int help_words = words.Next(1, 42);
+                int help_words = words.Next(1, count_cell);
 
-                while (help_open.Contains(help_words)) help_words = words.Next(1, 42);
+                while (help_open.Contains(help_words)) help_words = words.Next(1, count_cell);
 
                 switch (help_words)
                 {

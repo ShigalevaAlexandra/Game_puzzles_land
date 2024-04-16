@@ -55,6 +55,8 @@ namespace Game_puzzles_land
         private void rndBtn_back_Click(object sender, EventArgs e)
         {
             this.Close();
+            Main_menu main_Menu = new Main_menu();
+            main_Menu.Show();
         }
     }
 }
