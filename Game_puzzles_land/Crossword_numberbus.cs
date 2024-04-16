@@ -1054,6 +1054,7 @@ namespace Game_puzzles_land
             //сохранение номера попытки прохождения уровня
             user_number++;
             Properties.Settings.Default.CrosswordNumberbusNumber = user_number;
+            Properties.Settings.Default.Save();
 
             this.Close();
             Choice_crosswords choice_Crosswords = new Choice_crosswords();
